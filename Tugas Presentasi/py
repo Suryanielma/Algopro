@@ -1,0 +1,19 @@
+#https://www.spoj.com/problems/STRHH
+#Diberikan urutan 2*k karakter, harap cetak setiap karakter kedua 
+# dari paruh pertama urutan. Mulailah mencetak dengan karakter pertama.
+#input
+#Pada baris input pertama Anda diberikan bilangan bulat positif 
+# t (1<=t<=100) - jumlah kasus uji. Di setiap t baris berikutnya, 
+# Anda diberikan urutan 2*k (1<=k<=100) karakter.
+#output
+#Untuk setiap kasus uji, harap cetak setiap karakter kedua dari paruh pertama 
+# urutan tertentu (karakter pertama akan muncul).
+
+t = int(input())
+
+for i in range(t):
+    s = input()
+    n = len(s) // 2
+    for j in range(0, n, 2):
+        print(s[j], end='')
+    print()
